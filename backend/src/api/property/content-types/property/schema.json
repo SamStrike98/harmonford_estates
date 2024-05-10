@@ -1,0 +1,69 @@
+{
+  "kind": "collectionType",
+  "collectionName": "properties",
+  "info": {
+    "singularName": "property",
+    "pluralName": "properties",
+    "displayName": "property",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "text",
+      "required": true,
+      "unique": true
+    },
+    "rent": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "buy": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "bedrooms": {
+      "type": "integer",
+      "required": true,
+      "unique": false
+    },
+    "bathrooms": {
+      "type": "integer",
+      "required": true
+    },
+    "reception_rooms": {
+      "type": "integer",
+      "required": true
+    },
+    "deposit": {
+      "type": "decimal",
+      "required": true
+    },
+    "cost": {
+      "type": "decimal",
+      "required": true
+    },
+    "property_type": {
+      "type": "string",
+      "required": true
+    },
+    "images": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "category": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::category.category"
+    }
+  }
+}
