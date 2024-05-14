@@ -7,7 +7,7 @@ import PaginatedItems from "./PaginatedItems"
 import PropertyCard from "./PropertyCard"
 
 const PropertiesList = ({}) => {
-    const backendApi = process.env.NEXT_PUBLIC_BACKEND_API
+    const backendApi = process.env.NEXT_PUBLIC_BACKEND_API || 'https://127.0.0'
 
     const [minPrice, setMinPrice] = useState(0);
     const [maxPrice, setMaxPrice] = useState(5000);
@@ -35,7 +35,7 @@ const PropertiesList = ({}) => {
 
   return (
     <div className="pt-[200px]">
-        {isLoading && <div>Loading...I'm using free hosting, so load times may be slow...</div>}
+        {isLoading && <div>Loading, I am using free hosting, so load times may be slow...</div>}
         {error && <div>{error}</div>}
         {data &&
         
