@@ -1,11 +1,11 @@
 import PropertySingle from "@/components/PropertySingle"
 
-const page = () => {
+const page = ({ params }) => {
 
   return (
 
     <div className='pt-[400px]'>
-      <PropertySingle />
+      <PropertySingle id={params.id}/>
     </div>
   )
 }

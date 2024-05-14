@@ -3,9 +3,9 @@
 import React from 'react'
 import { useFetch } from '@/hooks/useFetch'
 
-const PropertySingle = ({ params }) => {
+const PropertySingle = ({ id }) => {
       const backendApi = process.env.NEXT_PUBLIC_BACKEND_API
-  const { data, isLoading, error } = useFetch(`${backendApi}/api/properties/${params.id}?populate=*`)
+  const { data, isLoading, error } = useFetch(`${backendApi}/api/properties/${id}?populate=*`)
 
   return (
         <div className='pt-[400px]'>
