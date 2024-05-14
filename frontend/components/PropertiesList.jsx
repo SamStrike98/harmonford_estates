@@ -7,6 +7,8 @@ import PaginatedItems from "./PaginatedItems"
 import PropertyCard from "./PropertyCard"
 
 const PropertiesList = ({}) => {
+    const backendApi = process.env.NEXT_PUBLIC_BACKEND_API
+
     const [minPrice, setMinPrice] = useState(0);
     const [maxPrice, setMaxPrice] = useState(5000);
     const [minBeds, setMinBeds] = useState(1);
@@ -23,7 +25,7 @@ const PropertiesList = ({}) => {
       }
 
 
-      const [baseUrl, setBaseUrl] = useState('http://127.0.0.1:1337/api/properties?populate=*')
+      const [baseUrl, setBaseUrl] = useState(`${backendApi}/api/properties?populate=*`)
 
       const [pageNumber, setPageNumber] = useState(1)
 

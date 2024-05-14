@@ -4,7 +4,8 @@ import React from 'react'
 import { useFetch } from '@/hooks/useFetch'
 
 const page = ({params}) => {
-  const { data, isLoading, error } = useFetch(`http://127.0.0.1:1337/api/properties/${params.id}?populate=*`)
+  const backendApi = process.env.NEXT_PUBLIC_BACKEND_API
+  const { data, isLoading, error } = useFetch(`${backendApi}/api/properties/${params.id}?populate=*`)
   
 
   return (
