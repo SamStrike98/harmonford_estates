@@ -9,7 +9,7 @@ const PropertySingle = ({ id }) => {
 
   return (
         <div className='pt-[400px]'>
-      {isLoading && <div>Loading...</div>}
+      {isLoading && <div>Loading...I'm using free hosting, so load times may be slow...</div>}
         {error && <div>{error}</div>}
         {data &&
         <div>{data.data.attributes.title}</div>
