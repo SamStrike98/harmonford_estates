@@ -2,13 +2,14 @@ import React from 'react'
 import ReactPaginate from 'react-paginate'
 import { useState } from 'react'
 
-const PaginatedItems = ({ pageCount, setPageNumber, pageNumber, setUrl, url }) => {
+const PaginatedItems = ({ pageCount, setPageNumber, pageNumber, setUrl, url, minBeds, maxBeds, minPrice, maxPrice, sort }) => {
 
     const handlePageClick = (e) => {
         setPageNumber(e.selected + 1)
         console.log(e.selected + 1)
         // setUrl()
-        setUrl(`http://127.0.0.1:1337/api/properties?populate=*&pagination[pageSize]=10&pagination[page]=${e.selected+1}&sort=publishedAt:desc`)
+        // setUrl(`http://127.0.0.1:1337/api/properties?populate=*&pagination[pageSize]=10&pagination[page]=${e.selected+1}&sort=publishedAt:desc`)
+        setUrl(`http://127.0.0.1:1337/api/properties?filters[bedrooms][$between]=${Number(minBeds)}&filters[bedrooms][$between]=${Number(maxBeds)}&filters[cost][$between]=${Number(minPrice)}&filters[cost][$between]=${Number(maxPrice)}&pagination[pageSize]=10&pagination[page]=${e.selected+1}&sort=${sort}`)
         
     }
 
