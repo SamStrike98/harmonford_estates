@@ -420,6 +420,7 @@ export interface ApiPropertyProperty extends Schema.CollectionType {
       'oneToOne',
       'api::category.category'
     >;
+    description: Attribute.Text & Attribute.Required;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
