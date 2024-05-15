@@ -64,6 +64,10 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::category.category"
+    },
+    "description": {
+      "type": "text",
+      "required": true
     }
   }
 }
