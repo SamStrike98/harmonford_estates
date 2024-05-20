@@ -68,6 +68,13 @@
     "description": {
       "type": "text",
       "required": true
+    },
+    "slider_images": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": true
     }
   }
 }
