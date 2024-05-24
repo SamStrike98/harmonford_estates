@@ -1,12 +1,18 @@
 {
   "collectionName": "components_room_descriptions_family_rooms",
   "info": {
-    "displayName": "family_room"
+    "displayName": "family_room",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "description": {
       "type": "text"
+    },
+    "title": {
+      "type": "string",
+      "default": "Family Room",
+      "required": true
     }
   }
 }

@@ -1,12 +1,18 @@
 {
   "collectionName": "components_room_descriptions_kitchens",
   "info": {
-    "displayName": "kitchen"
+    "displayName": "kitchen",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "description": {
       "type": "text"
+    },
+    "title": {
+      "type": "string",
+      "default": "Kitchen",
+      "required": true
     }
   }
 }

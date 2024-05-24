@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_room_descriptions_bedroom_4s",
+  "info": {
+    "displayName": "Bedroom_4"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "default": "Bedroom 4",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}

@@ -1,12 +1,16 @@
 {
   "collectionName": "components_room_descriptions_living_rooms",
   "info": {
-    "displayName": "living_room"
+    "displayName": "living_room",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "description": {
       "type": "text"
+    },
+    "title": {
+      "type": "string"
     }
   }
 }

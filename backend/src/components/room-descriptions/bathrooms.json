@@ -1,12 +1,18 @@
 {
   "collectionName": "components_room_descriptions_bathrooms",
   "info": {
-    "displayName": "bathrooms"
+    "displayName": "bathrooms",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "description": {
       "type": "text"
+    },
+    "title": {
+      "type": "string",
+      "default": "Bathrooms",
+      "required": true
     }
   }
 }

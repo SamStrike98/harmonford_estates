@@ -1,12 +1,18 @@
 {
   "collectionName": "components_room_descriptions_dining_rooms",
   "info": {
-    "displayName": "dining_room"
+    "displayName": "dining_room",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "description": {
       "type": "text"
+    },
+    "title": {
+      "type": "string",
+      "default": "Dining Room",
+      "required": true
     }
   }
 }

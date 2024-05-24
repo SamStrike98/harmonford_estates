@@ -1,12 +1,18 @@
 {
   "collectionName": "components_room_descriptions_bedroom_3s",
   "info": {
-    "displayName": "bedroom_3"
+    "displayName": "bedroom_3",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "description": {
       "type": "text"
+    },
+    "title": {
+      "type": "string",
+      "required": true,
+      "default": "Bedroom 3"
     }
   }
 }
