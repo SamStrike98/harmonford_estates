@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_room_descriptions_family_rooms",
+  "info": {
+    "displayName": "family_room"
+  },
+  "options": {},
+  "attributes": {
+    "description": {
+      "type": "text"
+    }
+  }
+}

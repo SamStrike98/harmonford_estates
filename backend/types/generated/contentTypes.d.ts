@@ -422,7 +422,18 @@ export interface ApiPropertyProperty extends Schema.CollectionType {
     >;
     description: Attribute.Text & Attribute.Required;
     slider_images: Attribute.Media & Attribute.Required;
-    room_descriptions: Attribute.Text & Attribute.Required;
+    room_descriptions: Attribute.DynamicZone<
+      [
+        'room-descriptions.bathrooms',
+        'room-descriptions.bedroom-1',
+        'room-descriptions.bedroom-2',
+        'room-descriptions.bedroom-3',
+        'room-descriptions.dining-room',
+        'room-descriptions.family-room',
+        'room-descriptions.kitchen',
+        'room-descriptions.living-room'
+      ]
+    >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

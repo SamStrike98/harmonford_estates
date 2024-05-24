@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_room_descriptions_bathrooms",
+  "info": {
+    "displayName": "bathrooms"
+  },
+  "options": {},
+  "attributes": {
+    "description": {
+      "type": "text"
+    }
+  }
+}

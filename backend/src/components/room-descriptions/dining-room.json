@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_room_descriptions_dining_rooms",
+  "info": {
+    "displayName": "dining_room"
+  },
+  "options": {},
+  "attributes": {
+    "description": {
+      "type": "text"
+    }
+  }
+}

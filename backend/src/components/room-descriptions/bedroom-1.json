@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_room_descriptions_bedroom_1s",
+  "info": {
+    "displayName": "bedroom_1"
+  },
+  "options": {},
+  "attributes": {
+    "description": {
+      "type": "text"
+    }
+  }
+}

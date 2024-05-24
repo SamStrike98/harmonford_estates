@@ -78,8 +78,17 @@
       ]
     },
     "room_descriptions": {
-      "type": "text",
-      "required": true
+      "type": "dynamiczone",
+      "components": [
+        "room-descriptions.bathrooms",
+        "room-descriptions.bedroom-1",
+        "room-descriptions.bedroom-2",
+        "room-descriptions.bedroom-3",
+        "room-descriptions.dining-room",
+        "room-descriptions.family-room",
+        "room-descriptions.kitchen",
+        "room-descriptions.living-room"
+      ]
     }
   }
 }
