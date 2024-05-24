@@ -1,14 +1,15 @@
 {
   "collectionName": "components_room_descriptions_bedroom_5s",
   "info": {
-    "displayName": "Bedroom_5"
+    "displayName": "Bedroom_5",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "title": {
       "type": "string",
       "default": "Bedroom 5",
-      "required": true
+      "required": false
     },
     "description": {
       "type": "text"

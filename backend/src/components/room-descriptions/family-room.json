@@ -12,7 +12,7 @@
     "title": {
       "type": "string",
       "default": "Family Room",
-      "required": true
+      "required": false
     }
   }
 }

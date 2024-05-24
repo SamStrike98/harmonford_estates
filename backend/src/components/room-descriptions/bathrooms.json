@@ -12,7 +12,7 @@
     "title": {
       "type": "string",
       "default": "Bathrooms",
-      "required": true
+      "required": false
     }
   }
 }

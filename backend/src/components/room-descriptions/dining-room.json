@@ -12,7 +12,7 @@
     "title": {
       "type": "string",
       "default": "Dining Room",
-      "required": true
+      "required": false
     }
   }
 }

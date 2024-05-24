@@ -8,9 +8,7 @@ export interface RoomDescriptionsBathrooms extends Schema.Component {
   };
   attributes: {
     description: Attribute.Text;
-    title: Attribute.String &
-      Attribute.Required &
-      Attribute.DefaultTo<'Bathrooms'>;
+    title: Attribute.String & Attribute.DefaultTo<'Bathrooms'>;
   };
 }
 
@@ -22,9 +20,7 @@ export interface RoomDescriptionsBedroom1 extends Schema.Component {
   };
   attributes: {
     description: Attribute.Text;
-    title: Attribute.String &
-      Attribute.Required &
-      Attribute.DefaultTo<'Bedroom 1'>;
+    title: Attribute.String & Attribute.DefaultTo<'Bedroom 1'>;
   };
 }
 
@@ -36,9 +32,7 @@ export interface RoomDescriptionsBedroom2 extends Schema.Component {
   };
   attributes: {
     description: Attribute.Text;
-    title: Attribute.String &
-      Attribute.Required &
-      Attribute.DefaultTo<'Bedroom 2'>;
+    title: Attribute.String & Attribute.DefaultTo<'Bedroom 2'>;
   };
 }
 
@@ -50,9 +44,7 @@ export interface RoomDescriptionsBedroom3 extends Schema.Component {
   };
   attributes: {
     description: Attribute.Text;
-    title: Attribute.String &
-      Attribute.Required &
-      Attribute.DefaultTo<'Bedroom 3'>;
+    title: Attribute.String & Attribute.DefaultTo<'Bedroom 3'>;
   };
 }
 
@@ -60,11 +52,10 @@ export interface RoomDescriptionsBedroom4 extends Schema.Component {
   collectionName: 'components_room_descriptions_bedroom_4s';
   info: {
     displayName: 'Bedroom_4';
+    description: '';
   };
   attributes: {
-    title: Attribute.String &
-      Attribute.Required &
-      Attribute.DefaultTo<'Bedroom 4'>;
+    title: Attribute.String & Attribute.DefaultTo<'Bedroom 4'>;
     description: Attribute.Text;
   };
 }
@@ -73,11 +64,10 @@ export interface RoomDescriptionsBedroom5 extends Schema.Component {
   collectionName: 'components_room_descriptions_bedroom_5s';
   info: {
     displayName: 'Bedroom_5';
+    description: '';
   };
   attributes: {
-    title: Attribute.String &
-      Attribute.Required &
-      Attribute.DefaultTo<'Bedroom 5'>;
+    title: Attribute.String & Attribute.DefaultTo<'Bedroom 5'>;
     description: Attribute.Text;
   };
 }
@@ -90,9 +80,7 @@ export interface RoomDescriptionsDiningRoom extends Schema.Component {
   };
   attributes: {
     description: Attribute.Text;
-    title: Attribute.String &
-      Attribute.Required &
-      Attribute.DefaultTo<'Dining Room'>;
+    title: Attribute.String & Attribute.DefaultTo<'Dining Room'>;
   };
 }
 
@@ -104,9 +92,7 @@ export interface RoomDescriptionsFamilyRoom extends Schema.Component {
   };
   attributes: {
     description: Attribute.Text;
-    title: Attribute.String &
-      Attribute.Required &
-      Attribute.DefaultTo<'Family Room'>;
+    title: Attribute.String & Attribute.DefaultTo<'Family Room'>;
   };
 }
 
@@ -118,9 +104,7 @@ export interface RoomDescriptionsKitchen extends Schema.Component {
   };
   attributes: {
     description: Attribute.Text;
-    title: Attribute.String &
-      Attribute.Required &
-      Attribute.DefaultTo<'Kitchen'>;
+    title: Attribute.String & Attribute.DefaultTo<'Kitchen'>;
   };
 }
 

@@ -431,7 +431,9 @@ export interface ApiPropertyProperty extends Schema.CollectionType {
         'room-descriptions.dining-room',
         'room-descriptions.family-room',
         'room-descriptions.kitchen',
-        'room-descriptions.living-room'
+        'room-descriptions.living-room',
+        'room-descriptions.bedroom-4',
+        'room-descriptions.bedroom-5'
       ]
     >;
     createdAt: Attribute.DateTime;
