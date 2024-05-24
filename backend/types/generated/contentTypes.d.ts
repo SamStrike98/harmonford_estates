@@ -421,7 +421,8 @@ export interface ApiPropertyProperty extends Schema.CollectionType {
       'api::category.category'
     >;
     description: Attribute.Text & Attribute.Required;
-    slider_images: Attribute.Media;
+    slider_images: Attribute.Media & Attribute.Required;
+    room_descriptions: Attribute.Text & Attribute.Required;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

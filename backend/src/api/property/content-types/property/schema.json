@@ -70,11 +70,16 @@
       "required": true
     },
     "slider_images": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
+    },
+    "room_descriptions": {
+      "type": "text",
+      "required": true
     }
   }
 }
