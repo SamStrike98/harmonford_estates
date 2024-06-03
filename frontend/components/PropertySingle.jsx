@@ -21,7 +21,7 @@ const PropertySingle = ({ id }) => {
         {error && <div>{error}</div>}
         {data &&
         <div className='flex flex-col items-center'>
-          <h2 className='text-5xl font-bold text-[#052853]'>{data.data.attributes.title}</h2>
+          <h2 className='text-3xl md:text-5xl font-bold text-[#052853] mb-4'>{data.data.attributes.title}</h2>
           <div className='w-[80%] '>
             {/* <Image src={`${data.data.attributes.images.data[0].attributes.formats.large.url}`} alt={`${data.data.attributes.title} Image`} width={1000} height={500} className='object-cover h-full rounded-md'/> */}
             <Slider imgArr={data.data.attributes.slider_images.data}/>
