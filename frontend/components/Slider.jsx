@@ -23,9 +23,9 @@ const Slider = ({ imgArr }) => {
         
     }
   return (
-    <div className='flex flex-row items-center'>
+    <div className='flex flex-row justify-center items-center'>
         <span><FaAngleLeft color='#052853' onClick={prevImg} className='hover:scale-[2.5] transition-transform cursor-pointer'/></span>
-        <div className='bg-[#052853] p-1 w-[1000px] h-[60vh] flex flex-col justify-center items-center mx-2 rounded-md'>
+        <div className={`bg-[#052853] p-1 max-w-[1000px] w-[80vw] h-[48vw]  max-h-[50vh] flex flex-col justify-center items-center mx-2 rounded-md`}>
             <Image src={imgArr[currentIndex].attributes.formats.large.url} width={1280} height={720} className='w-full h-full rounded-sm' alt="sd"/>
         </div>
         

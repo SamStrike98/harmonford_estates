@@ -9,7 +9,7 @@ const PropertiesSection = ({  }) => {
     
 
   return (
-    <div className='pt-[200px]'>
+    <div className=''>
         
         <PropertiesList />
     </div>

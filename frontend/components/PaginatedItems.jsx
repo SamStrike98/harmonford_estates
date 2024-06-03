@@ -15,7 +15,7 @@ const PaginatedItems = ({ pageCount, setPageNumber, pageNumber, setUrl, url, min
     }
 
   return (
-    <div className='w-[60%] border-t border-b py-4 border-black'>
+    <div className='w-[60%] py-4'>
         <ReactPaginate containerClassName='flex flex-row items-center justify-evenly w-full' breakLabel="..." nextLabel="next >" onPageChange={handlePageClick} pageRangeDisplayed={5} pageCount={pageCount} previousLabel="< previous" renderOnZeroPageCount={null}/>
     </div>
   )

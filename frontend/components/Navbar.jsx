@@ -36,8 +36,8 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
-    <div className='bg-[#052853] fixed w-full h-[120px] py-2'>
-      <div className='max-container flex flex-row items-center justify-between md:justify-evenly'>
+    <div className='bg-[#052853] fixed w-full h-[120px]'>
+      <div className='max-container h-full flex flex-row items-center justify-between md:justify-evenly'>
         <Image alt='logo' className='ml-4' src={logo} height='100' width='100'/>
         <nav className={`${isOpen ? 'flex flex-col' : 'hidden md:flex flex-row'} h-[calc(100vh-120px)] md:h-full top-[120px] md:top-0  md:translate-y-0 w-full md:flex-row justify-evenly text-center md:w-[60%] absolute md:relative`}>
           {navLinks.map(item => (

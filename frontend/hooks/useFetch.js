@@ -8,6 +8,7 @@ export const useFetch = (url) => {
     useEffect(() => {
         const fetchData = async() => {
             setIsLoading(true);
+            setData(false)
             try{
                 const res = await fetch(url, {cache: 'no-store'})
                 if(!res.ok){

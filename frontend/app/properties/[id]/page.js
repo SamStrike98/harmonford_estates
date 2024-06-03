@@ -4,7 +4,7 @@ const page = ({ params }) => {
 
   return (
 
-    <div className='pt-[400px]'>
+    <div className=''>
       <PropertySingle id={params.id}/>
     </div>
   )
