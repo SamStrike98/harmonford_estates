@@ -44,7 +44,7 @@ const PropertiesList = ({}) => {
         <div className="text-blue-500 flex flex-col items-center w-full bg-[#F4F4F4]">
             <form className='text-[#4D8C87] py-3 flex flex-col items-center gap-2 lg:gap-1 lg:flex-row justify-evenly w-[80%]'>
 
-            <div className="flex flex-col items-center">
+            <div className="flex flex-col items-center w-full">
                 <label className="text-[#4D8C87] flex flex-row items-center gap-1">Min <FaMoneyBillAlt /></label>
                 <select onChange={(e) => setMinPrice(e.target.value)} defaultValue={0} className="rounded-md w-1/2 lg:w-fit border border-[#4D8C87] cursor-pointer outline-none py-1 px-2">
                     <option value={0}>£0</option>
@@ -57,7 +57,7 @@ const PropertiesList = ({}) => {
                 </select>
             </div>
 
-            <div className="flex flex-col items-center">
+            <div className="flex flex-col items-center w-full">
                 <label className="text-[#4D8C87] flex flex-row items-center gap-1">Max <FaMoneyBillAlt /></label>
                 <select onChange={(e) => setMaxPrice(e.target.value)} defaultValue={2000} className="rounded-md w-1/2 lg:w-fit border border-[#4D8C87] cursor-pointer outline-none py-1 px-2">
                     <option value={500}>£500 PCM</option>
@@ -69,7 +69,7 @@ const PropertiesList = ({}) => {
                 </select>
             </div>
 
-            <div className="flex flex-col items-center">
+            <div className="flex flex-col items-center w-full">
                 <label className="text-[#4D8C87] flex flex-row items-center gap-1">Min <FaBed /></label>
                 <select onChange={(e) => setMinBeds(e.target.value)} defaultValue={1} className="rounded-md w-1/2 lg:w-fit border border-[#4D8C87] cursor-pointer outline-none py-1 px-2">
                     <option value={1}>1</option>
@@ -80,7 +80,7 @@ const PropertiesList = ({}) => {
                 </select>
             </div>
 
-            <div className="flex flex-col items-center">
+            <div className="flex flex-col items-center w-full">
                 <label className="text-[#4D8C87] flex flex-row items-center gap-1">Max <FaBed /></label>
                 <select onChange={(e) => setMaxBeds(e.target.value)} defaultValue={5} className="rounded-md w-1/2 lg:w-fit border border-[#4D8C87] cursor-pointer outline-none py-1 px-2">
                     <option value={1}>1</option>
@@ -91,7 +91,7 @@ const PropertiesList = ({}) => {
                 </select>
             </div>
 
-            <div className="flex flex-col items-center">
+            <div className="flex flex-col items-center w-full">
                 <label className="text-[#4D8C87] flex flex-row items-center gap-1">Sort By <FaSort /></label>
                 <select defaultValue={'publishedAt:desc'} onChange={(e) => {setSort(e.target.value)}} className="rounded-md w-1/2 lg:w-full border border-[#4D8C87] cursor-pointer outline-none py-1 px-2">
                     <option value={'publishedAt:desc'}>Date: Newest to Oldest</option>
@@ -101,10 +101,10 @@ const PropertiesList = ({}) => {
                 </select>
             </div>
 
-            <button className="text-white bg-[#052853] border border-white py-1 px-2 rounded-md" onClick={handleSubmit}>Submit</button>
+            <button className="text-white bg-[#052853] border border-white py-1 px-2 rounded-md lg:self-end" onClick={handleSubmit}>Submit</button>
         </form>
 
-            <div className="flex flex-col w-[80%]">
+            <div className="flex flex-col w-[85%]">
                 <p>Results Found: {data.meta.pagination.total}</p>
 
                 <ul className="flex flex-col gap-7">
