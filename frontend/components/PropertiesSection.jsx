@@ -9,7 +9,7 @@ const PropertiesSection = ({  }) => {
     
 
   return (
-    <div className=''>
+    <div className='bg-[#F4F4F4] w-full'>
         
         <PropertiesList />
     </div>
