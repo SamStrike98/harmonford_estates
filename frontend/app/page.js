@@ -9,10 +9,10 @@ export default function Home() {
     <main className="text-black bg-[#f4f4f4]">
         <div className="w-[full] h-[700px] mx-auto relative flex flex-row justify-center">
           <Image src={harmonfordImage} width={1000} height={700} className="w-full h-full object-cover"/>
-          <div className="bg-[#052853] bg-opacity-80 p-3 absolute max-w-[900px] w-[80%] text-5xl font-extrabold text-white text-center z-10 top-[50%] leading-relaxed rounded-md">Proud To Be The Official Estate Agents of Harmonford</div>
+          <div className="bg-[#052853] bg-opacity-80 p-3 absolute max-w-[900px] w-[80%] text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-white text-center z-10 my-[50%] md:my-0 md:top-[50%] leading-relaxed rounded-md">Proud To Be The Official Estate Agents of Harmonford</div>
         </div>
 
-        <section className="bg-[#052853] text-white flex flex-row justify-center min-h-[500px] py-5">
+        <section className="bg-[#052853] text-white flex flex-row justify-center min-h-[500px] py-32" id="services">
           <div className="w-[80vw] max-w-[1000px] flex flex-col gap-5 md:gap-0 md:flex-row-reverse justify-evenly items-center">
             <div className="md:w-[45%] w-[80%]">
               <h3 className="text-4xl font-bold">Our Services</h3>
@@ -63,7 +63,7 @@ export default function Home() {
             
         </section>
 
-        <section className="flex flex-row justify-center min-h-[500px] text-[#052853] py-5">
+        <section className="flex flex-row justify-center min-h-[500px] text-[#052853] py-32">
             <div className="w-[80vw] max-w-[1000px] flex flex-col gap-5 md:gap-0 md:flex-row justify-evenly items-center">
             <div className="md:w-[45%] w-[80%]">
               <h3 className="text-4xl font-bold">Property Search</h3>
@@ -80,7 +80,7 @@ export default function Home() {
 
         </section>
 
-        <section className="bg-[#052853] text-white flex flex-row justify-center min-h-[500px] py-5">
+        <section className="bg-[#052853] text-white flex flex-row justify-center min-h-[500px] py-32" id="about">
           <div className="w-[80vw] max-w-[1000px] flex flex-col gap-5 md:gap-0 md:flex-row-reverse justify-evenly items-center">
             <div className="md:w-[45%] w-[80%]">
               <h3 className="text-4xl font-bold">About Us</h3>
@@ -96,7 +96,7 @@ export default function Home() {
             
         </section>
 
-        <section className="flex flex-row justify-center min-h-[600px] text-[#052853] py-5">
+        <section className="flex flex-row justify-center min-h-[600px] text-[#052853] py-32" id="contact">
             <div className="w-[80vw] max-w-[1000px] flex flex-col gap-5 md:gap-0 md:flex-row  justify-evenly items-center">
             <div className="md:min-w-[45%] w-[80%]">
               <h3 className="text-4xl font-bold">Contact</h3>

@@ -46,7 +46,7 @@ const PropertiesList = ({}) => {
 
             <div className="flex flex-col items-center w-full">
                 <label className="text-[#4D8C87] flex flex-row items-center gap-1">Min <FaMoneyBillAlt /></label>
-                <select onChange={(e) => setMinPrice(e.target.value)} defaultValue={0} className="rounded-md w-1/2 lg:w-fit border border-[#4D8C87] cursor-pointer outline-none py-1 px-2">
+                <select onChange={(e) => setMinPrice(e.target.value)} defaultValue={0} className="bg-white rounded-md w-1/2 lg:w-fit border border-[#4D8C87] cursor-pointer outline-none py-1 px-2">
                     <option value={0}>£0</option>
                     <option value={500}>£500 PCM</option>
                     <option value={600}>£600 PCM</option>
@@ -59,7 +59,7 @@ const PropertiesList = ({}) => {
 
             <div className="flex flex-col items-center w-full">
                 <label className="text-[#4D8C87] flex flex-row items-center gap-1">Max <FaMoneyBillAlt /></label>
-                <select onChange={(e) => setMaxPrice(e.target.value)} defaultValue={2000} className="rounded-md w-1/2 lg:w-fit border border-[#4D8C87] cursor-pointer outline-none py-1 px-2">
+                <select onChange={(e) => setMaxPrice(e.target.value)} defaultValue={2000} className="bg-white rounded-md w-1/2 lg:w-fit border border-[#4D8C87] cursor-pointer outline-none py-1 px-2">
                     <option value={500}>£500 PCM</option>
                     <option value={600}>£600 PCM</option>
                     <option value={750}>£750 PCM</option>
@@ -71,7 +71,7 @@ const PropertiesList = ({}) => {
 
             <div className="flex flex-col items-center w-full">
                 <label className="text-[#4D8C87] flex flex-row items-center gap-1">Min <FaBed /></label>
-                <select onChange={(e) => setMinBeds(e.target.value)} defaultValue={1} className="rounded-md w-1/2 lg:w-fit border border-[#4D8C87] cursor-pointer outline-none py-1 px-2">
+                <select onChange={(e) => setMinBeds(e.target.value)} defaultValue={1} className="bg-white rounded-md w-1/2 lg:w-fit border border-[#4D8C87] cursor-pointer outline-none py-1 px-2">
                     <option value={1}>1</option>
                     <option value={2}>2</option>
                     <option value={3}>3</option>
@@ -82,7 +82,7 @@ const PropertiesList = ({}) => {
 
             <div className="flex flex-col items-center w-full">
                 <label className="text-[#4D8C87] flex flex-row items-center gap-1">Max <FaBed /></label>
-                <select onChange={(e) => setMaxBeds(e.target.value)} defaultValue={5} className="rounded-md w-1/2 lg:w-fit border border-[#4D8C87] cursor-pointer outline-none py-1 px-2">
+                <select onChange={(e) => setMaxBeds(e.target.value)} defaultValue={5} className="bg-white rounded-md w-1/2 lg:w-fit border border-[#4D8C87] cursor-pointer outline-none py-1 px-2">
                     <option value={1}>1</option>
                     <option value={2}>2</option>
                     <option value={3}>3</option>
@@ -93,7 +93,7 @@ const PropertiesList = ({}) => {
 
             <div className="flex flex-col items-center w-full">
                 <label className="text-[#4D8C87] flex flex-row items-center gap-1">Sort By <FaSort /></label>
-                <select defaultValue={'publishedAt:desc'} onChange={(e) => {setSort(e.target.value)}} className="rounded-md w-1/2 lg:w-full border border-[#4D8C87] cursor-pointer outline-none py-1 px-2">
+                <select defaultValue={'publishedAt:desc'} onChange={(e) => {setSort(e.target.value)}} className="bg-white rounded-md w-1/2 lg:w-full border border-[#4D8C87] cursor-pointer outline-none py-1 px-2">
                     <option value={'publishedAt:desc'}>Date: Newest to Oldest</option>
                     <option value={'publishedAt:asc'}>Date: Oldest to Newest</option>
                     <option value={'cost:asc'}>Price: Lowest to Highest</option>

@@ -23,12 +23,12 @@ const navLinks = [
   {
     id: 3,
     title: 'About Us',
-    link: '/about'
+    link: '/#about'
   },
   {
     id: 4,
     title: 'Contact',
-    link: '/contact'
+    link: '/#contact'
   }
 ]
 
@@ -41,7 +41,7 @@ const Navbar = () => {
         <Image alt='logo' className='ml-4' src={logo} height='100' width='100'/>
         <nav className={`${isOpen ? 'flex flex-col' : 'hidden md:flex flex-row'} h-[calc(100vh-120px)] md:h-full top-[120px] md:top-0  md:translate-y-0 w-full md:flex-row justify-evenly text-center md:w-[60%] absolute md:relative`}>
           {navLinks.map(item => (
-            <Link onClick={() => setIsOpen(false)} key={item.id} href={item.link} className='text-white w-full h-full bg-blue-400 hover:bg-blue-200 md:hover:bg-transparent md:hover:text-blue-200 md:bg-transparent flex flex-col justify-center'>{item.title}</Link>
+            <Link onClick={() => setIsOpen(false)} key={item.id} href={item.link} className='text-white text-xl font-bold w-full h-full bg-blue-400 hover:bg-blue-200 md:hover:bg-transparent md:hover:text-blue-200 md:bg-transparent flex flex-col justify-center'>{item.title}</Link>
           ))}
         </nav>
         <div className='flex flex-col md:hidden cursor-pointer mr-4'>
