@@ -17,7 +17,7 @@ const PropertySingle = ({ id }) => {
 
   return (
         <div className='pt-[130px] bg-[#F4F4F4] min-h-[100vh]'>
-      {isLoading && <div>Loading, I am using free hosting, so load times may be slow...</div>}
+      {isLoading && <div><span className="loading loading-spinner loading-lg"></span>Loading, I am using free hosting, so load times may be slow...</div>}
         {error && <div>{error}</div>}
         {data &&
         <div className='flex flex-col items-center'>
@@ -52,7 +52,6 @@ const PropertySingle = ({ id }) => {
               </div>
             </div>
 
-            {/* <Slider imgArr={data.data.attributes.slider_images.data}/> */}
           </div>
         }
     </div>

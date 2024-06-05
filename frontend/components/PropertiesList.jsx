@@ -37,7 +37,7 @@ const PropertiesList = ({}) => {
 
   return (
     <div className="pt-[120px] min-h-[100vh] max-w-[1200px] mx-auto">
-        {isLoading && <div>Loading, I am using free hosting, so load times may be slow...</div>}
+        {isLoading && <div><span className="loading loading-spinner loading-lg"></span>Loading, I am using free hosting, so load times may be slow...</div>}
         {error && <div>{error}</div>}
         {data &&
         
