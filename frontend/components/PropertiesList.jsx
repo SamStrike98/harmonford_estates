@@ -7,6 +7,7 @@ import PaginatedItems from "./PaginatedItems"
 import PropertyCard from "./PropertyCard"
 
 import { FaBed, FaBath, FaMoneyBillAlt, FaSort } from "react-icons/fa";
+import Loading from "./Loading"
 
 const PropertiesList = ({}) => {
     const backendApi = process.env.NEXT_PUBLIC_BACKEND_API || 'https://127.0.0'
@@ -37,7 +38,11 @@ const PropertiesList = ({}) => {
 
   return (
     <div className="pt-[120px] min-h-[100vh] max-w-[1200px] mx-auto">
-        {isLoading && <div className='flex flex-col items-center gap-4 text-[#052853]'><span className="loading loading-spinner loading-lg"></span>Loading, I am using free hosting, so load times may be slow...</div>}
+        {isLoading && <div className='flex flex-col items-center gap-4 text-[#052853]'>
+                            <span className="loading loading-spinner loading-lg"></span>
+                            <p>Loading, I am using free hosting, so load times may be slow...</p>
+                            <Loading />
+                        </div>}
         {error && <div>{error}</div>}
         {data &&
         
