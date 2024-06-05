@@ -17,7 +17,7 @@ const PropertySingle = ({ id }) => {
 
   return (
         <div className='pt-[130px] bg-[#F4F4F4] min-h-[100vh]'>
-      {isLoading && <div><span className="loading loading-spinner loading-lg"></span>Loading, I am using free hosting, so load times may be slow...</div>}
+      {isLoading && <div className='flex flex-col items-center gap-4 text-[#052853]'><span className="loading loading-spinner loading-lg"></span>Loading, I am using free hosting, so load times may be slow...</div>}
         {error && <div>{error}</div>}
         {data &&
         <div className='flex flex-col items-center'>
