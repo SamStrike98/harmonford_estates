@@ -36,9 +36,11 @@ const PropertiesList = ({}) => {
 
         const { data, isLoading, error } = useFetch(url)
 
+    const [showFilters, setShowFilters] = useState(true)
+
   return (
     <div className="pt-[120px] min-h-[100vh] max-w-[1200px] mx-auto">
-        {isLoading && <div className='flex flex-col items-center gap-4 text-[#052853]'>
+        {isLoading && <div className='flex flex-col items-center gap-4 text-[#052853] py-8'>
                             <span className="loading loading-spinner loading-lg"></span>
                             <p>Loading, I am using free hosting, so load times may be slow...</p>
                             <Loading />
@@ -47,7 +49,7 @@ const PropertiesList = ({}) => {
         {data &&
         
         <div className="text-blue-500 flex flex-col items-center w-full bg-[#F4F4F4]">
-            <form className='text-[#4D8C87] py-3 flex flex-col items-center gap-2 lg:gap-1 lg:flex-row justify-evenly w-[80%]'>
+            <form className={`${showFilters ? 'flex' : 'hidden'} text-[#4D8C87] py-3 flex-col items-center gap-2 lg:gap-1 lg:flex-row justify-evenly w-[80%]`}>
 
             <div className="flex flex-col items-center w-full">
                 <label className="text-[#4D8C87] flex flex-row items-center gap-1">Min <FaMoneyBillAlt /></label>
@@ -108,6 +110,8 @@ const PropertiesList = ({}) => {
 
             <button className="text-white bg-[#052853] border border-white py-1 px-2 rounded-md lg:self-end" onClick={handleSubmit}>Submit</button>
         </form>
+
+        <button className="text-white bg-[#EDB522] px-2 py-1 rounded-md mt-8" onClick={() => setShowFilters(!showFilters)}>Toggle Filters</button>
 
             <div className="flex flex-col w-[85%]">
                 <p>Results Found: {data.meta.pagination.total}</p>

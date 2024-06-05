@@ -3,6 +3,7 @@ import React from 'react'
 import { FaFacebookF, FaInstagram } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 
+
 const navLinks = [
   {
     id: 1,
@@ -40,22 +41,11 @@ const Footer = () => {
         </ul>
 
         <ul className='flex flex-row justify-evenly'>
-          <li className='cursor-pointer'><FaFacebookF size={30}/></li>
-          <li className='cursor-pointer'><FaInstagram size={30}/></li>
-          <li className='cursor-pointer'><FaXTwitter size={30}/></li>
+          <li className='cursor-pointer'><FaFacebookF size={30} className='hover:fill-[#EDB522] transition-all ease-in-out'/></li>
+          <li className='cursor-pointer'><FaInstagram size={30} className='hover:fill-[#EDB522] transition-all ease-in-out'/></li>
+          <li className='cursor-pointer'><FaXTwitter size={30} className='hover:fill-[#EDB522] transition-all ease-in-out'/></li>
         </ul>
       </div>
-
-      {/* <div className='flex flex-col gap-4 items-center justify-evenly py-3'>
-
-        <ul className='flex flex-col'>
-          {navLinks.map(item => (
-            <Link key={item.id} href={item.link}>{item.title}</Link>
-          ))}
-        </ul>
-
-
-      </div> */}
     </footer>
   )
 }
